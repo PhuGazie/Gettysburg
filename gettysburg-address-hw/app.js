@@ -4,12 +4,17 @@ $(document).ready(function(){
   $("#container").fadeIn(1000);
 
   $(document).on("mouseenter", "p", function(){
-    $(this).css("background-color", "yellow")
+    $(this).css("background-color", "yellow");
   });
-
+// also written $(p).on("mouseenter", function(){
+//    $(this).css("background-color", "yellow")
+});
   $(document).on("mouseleave", "p", function(){
-    $(this).css("background-color", "white")
+    $(this).css("background-color", "white");
   });
+  // also written $(p).on("mouseleave", function(){
+  //    $(this).removeAttr("style")
+
 
   $(document).on("click", "h2", function(){
     $("h2").animate({
@@ -34,6 +39,3 @@ $(document).ready(function(){
   $(document).on("click", "#switcher-default", function(){
     $(".speech").css("font-size", "1em");
   });
-
-
-});
