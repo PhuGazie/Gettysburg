@@ -24,13 +24,16 @@ $(document).ready(function(){
   });
 
   $(document).on("click", "#switcher-large", function(){
-    $(".speech").addClass("font-large");
+    $(".speech").css("font-size", "2em");
   });
 
   $(document).on("click", "#switcher-small", function(){
-    $(".speech").addClass("font-small");
+    $(".speech").css("font-size", ".5em");
   });
 
+  $(document).on("click", "#switcher-default", function(){
+    $(".speech").css("font-size", "1em");
+  });
 
 
 });
